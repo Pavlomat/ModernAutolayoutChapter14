@@ -17,7 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         window?.backgroundColor = .white
-        let navigationController = UINavigationController(rootViewController: MainViewController())
+        let rootviewController = FirstViewController()
+        rootviewController.title = NSLocalizedString("Adapt Stack", comment: "Adapt Stack")
+        let navigationController = UINavigationController(rootViewController: rootviewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "pngegg.png",
+      "idiom" : "universal"
+    },
+    {
+      "height-class" : "regular",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "universal",
+      "width-class" : "regular"
+    },
+    {
+      "filename" : "Копия pngegg.png",
+      "height-class" : "regular",
+      "idiom" : "universal",
+      "width-class" : "regular"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

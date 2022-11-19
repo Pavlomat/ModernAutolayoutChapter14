@@ -17,10 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         window?.backgroundColor = .white
-        let rootviewController = FirstViewController()
-        rootviewController.title = NSLocalizedString("Adapt Stack", comment: "Adapt Stack")
-        let navigationController = UINavigationController(rootViewController: rootviewController)
-        window?.rootViewController = navigationController
+        let rootviewController = TabBarController()
+//        rootviewController.title = NSLocalizedString("Adapt Stack", comment: "Adapt Stack")
+//        let navigationController = UINavigationController(rootViewController: rootviewController)
+//        navigationController.navigationBar.isTranslucent = false
+        window?.rootViewController = rootviewController
         window?.makeKeyAndVisible()
     }
 }

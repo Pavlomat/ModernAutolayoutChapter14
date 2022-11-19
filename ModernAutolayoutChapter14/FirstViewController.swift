@@ -16,9 +16,9 @@ class FirstViewController: UIViewController {
         static let transformScale: CGFloat = 1.25
     }
     
-    private let topImage = createImageView(name: "screenshot")
-    private let middleImage = createImageView(name: "screenshot")
-    private let bottomImage = createImageView(name: "screenshot")
+    private let topImage = createImageView(name: "pngegg")
+    private let middleImage = createImageView(name: "pngegg")
+    private let bottomImage = createImageView(name: "pngegg")
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [topImage, middleImage, bottomImage])

@@ -9,6 +9,8 @@ import UIKit
 
 class FourthViewController: UIViewController {
     
+    private let padding: CGFloat = 20.0
+    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Weather For Today"
@@ -35,21 +37,34 @@ class FourthViewController: UIViewController {
     
     let imageView = createImageView(name: "pngegg")
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 0.9, alpha: 1.0)
+        setupView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupView() {
+        view.addSubview(titleLabel)
+        view.addSubview(textLabel)
+        view.addSubview(imageView)
+        
+        view.directionalLayoutMargins = NSDirectionalEdgeInsets(top: padding, leading: padding, bottom: padding, trailing: padding)
+        
+        let margins = view.layoutMarginsGuide
+        
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: margins.topAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            
+            imageView.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 1.0),
+            imageView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            
+            textLabel.topAnchor.constraint(equalToSystemSpacingBelow: imageView.bottomAnchor, multiplier: 1.0),
+            textLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
+            textLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            textLabel.bottomAnchor.constraint(equalTo: margins.bottomAnchor)
+        ])
     }
-    */
 }

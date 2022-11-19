@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA8505C82927C985007E984E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8505C72927C985007E984E /* SecondViewController.swift */; };
-		BA8505CA2927CCFE007E984E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8505C92927CCFE007E984E /* ContainerView.swift */; };
+		BA8505CA2927CCFE007E984E /* ContainerView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8505C92927CCFE007E984E /* ContainerView2.swift */; };
 		BAC051CA292274380052BB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC051C9292274380052BB95 /* AppDelegate.swift */; };
 		BAC051CC292274380052BB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC051CB292274380052BB95 /* SceneDelegate.swift */; };
 		BAC051D3292274390052BB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC051D2292274390052BB95 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		BA8505C72927C985007E984E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		BA8505C92927CCFE007E984E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		BA8505C92927CCFE007E984E /* ContainerView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView2.swift; sourceTree = "<group>"; };
 		BAC051C6292274380052BB95 /* ModernAutolayoutChapter14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModernAutolayoutChapter14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC051C9292274380052BB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC051CB292274380052BB95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				BA8505C72927C985007E984E /* SecondViewController.swift */,
 				BAC1949B2928E57A008C2362 /* ThirdViewController.swift */,
 				BAC1949F2928EAE1008C2362 /* FourthViewController.swift */,
-				BA8505C92927CCFE007E984E /* ContainerView.swift */,
+				BA8505C92927CCFE007E984E /* ContainerView2.swift */,
 				BAC051D2292274390052BB95 /* Assets.xcassets */,
 				BAC051D4292274390052BB95 /* LaunchScreen.storyboard */,
 				BAC051D7292274390052BB95 /* Info.plist */,
@@ -155,7 +155,7 @@
 				BAC1949C2928E57A008C2362 /* ThirdViewController.swift in Sources */,
 				BAC194A02928EAE1008C2362 /* FourthViewController.swift in Sources */,
 				BAC1949A2928C2A9008C2362 /* TabBarController.swift in Sources */,
-				BA8505CA2927CCFE007E984E /* ContainerView.swift in Sources */,
+				BA8505CA2927CCFE007E984E /* ContainerView2.swift in Sources */,
 				BAC051CC292274380052BB95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

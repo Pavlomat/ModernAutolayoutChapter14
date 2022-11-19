@@ -9,8 +9,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    private let containerView: ContainerView = {
-       let view = ContainerView()
+    private let containerView: ContainerView2 = {
+       let view = ContainerView2()
         view.translatesAutoresizingMaskIntoConstraints = false
 //        view.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 20, leading: 40, bottom: 20, trailing: 40) //работает на containerView по отношению к внешнему вью (scrollView)
         return view

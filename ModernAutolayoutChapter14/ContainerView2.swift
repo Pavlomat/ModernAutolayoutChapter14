@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ContainerView: UIView {
+class ContainerView2: UIView {
     
     private let sizeLabel: UILabel = {
         let label = UILabel()

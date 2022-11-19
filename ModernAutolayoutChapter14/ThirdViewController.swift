@@ -15,7 +15,7 @@ class ThirdViewController: UIViewController {
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [previewBotton, buyBotton])
         stackView.spacing = 32.0
-        stackView.distribution = .fill
+        stackView.distribution = .fillEqually
         stackView.alignment = .fill
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -40,17 +40,18 @@ class ThirdViewController: UIViewController {
         ])
     }
     
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) { super.traitCollectionDidChange(previousTraitCollection)
-        if previousTraitCollection?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
-            configureView(for: traitCollection) }
+    private func configureView(for traitCollection: UITraitCollection) {
+        if traitCollection.verticalSizeClass == .compact {
+            stackView.axis = .horizontal
+        } else {
+            stackView.axis = .vertical
+        }
     }
     
-    private func configureView(for traitCollection: UITraitCollection) {
-        let contentSize = traitCollection.preferredContentSizeCategory
-        if contentSize.isAccessibilityCategory {
-            stackView.axis = .vertical
-        } else {
-            stackView.axis = .horizontal
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if previousTraitCollection?.verticalSizeClass != traitCollection.verticalSizeClass {
+            configureView(for: traitCollection)
         }
     }
     

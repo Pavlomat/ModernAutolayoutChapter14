@@ -16,7 +16,7 @@
 		BAC051DE2922A9860052BB95 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC051DD2922A9860052BB95 /* FirstViewController.swift */; };
 		BAC1949A2928C2A9008C2362 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC194992928C2A9008C2362 /* TabBarController.swift */; };
 		BAC1949C2928E57A008C2362 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1949B2928E57A008C2362 /* ThirdViewController.swift */; };
-		BAC1949E2928E7C3008C2362 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC1949D2928E7C3008C2362 /* main.storyboard */; };
+		BAC194A02928EAE1008C2362 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1949F2928EAE1008C2362 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		BAC051DD2922A9860052BB95 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		BAC194992928C2A9008C2362 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BAC1949B2928E57A008C2362 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		BAC1949D2928E7C3008C2362 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		BAC1949F2928EAE1008C2362 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				BAC051DD2922A9860052BB95 /* FirstViewController.swift */,
 				BA8505C72927C985007E984E /* SecondViewController.swift */,
 				BAC1949B2928E57A008C2362 /* ThirdViewController.swift */,
+				BAC1949F2928EAE1008C2362 /* FourthViewController.swift */,
 				BA8505C92927CCFE007E984E /* ContainerView.swift */,
-				BAC1949D2928E7C3008C2362 /* main.storyboard */,
 				BAC051D2292274390052BB95 /* Assets.xcassets */,
 				BAC051D4292274390052BB95 /* LaunchScreen.storyboard */,
 				BAC051D7292274390052BB95 /* Info.plist */,
@@ -138,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC051D6292274390052BB95 /* LaunchScreen.storyboard in Resources */,
-				BAC1949E2928E7C3008C2362 /* main.storyboard in Resources */,
 				BAC051D3292274390052BB95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +153,7 @@
 				BAC051DE2922A9860052BB95 /* FirstViewController.swift in Sources */,
 				BAC051CA292274380052BB95 /* AppDelegate.swift in Sources */,
 				BAC1949C2928E57A008C2362 /* ThirdViewController.swift in Sources */,
+				BAC194A02928EAE1008C2362 /* FourthViewController.swift in Sources */,
 				BAC1949A2928C2A9008C2362 /* TabBarController.swift in Sources */,
 				BA8505CA2927CCFE007E984E /* ContainerView.swift in Sources */,
 				BAC051CC292274380052BB95 /* SceneDelegate.swift in Sources */,

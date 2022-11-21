@@ -9,11 +9,6 @@ import UIKit
 
 class ContainerView4: UIView {
     
-    private enum ViewMetrics {
-        static let margin: CGFloat = 20.0
-        static let narrowLayoutLimit: CGFloat = 500.0
-    }
-    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Weather For Today"
@@ -42,7 +37,7 @@ class ContainerView4: UIView {
         let view = UIImageView()
         view.image = UIImage(named: "pngegg")
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.contentMode = .scaleAspectFit
+        view.contentMode = .top
         return view
     }()
     

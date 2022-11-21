@@ -73,9 +73,9 @@ class ContainerView2: UIView {
             stackView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
             stackView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
             
-            longLabel.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
+            longLabel.leadingAnchor.constraint(equalTo: readableContentGuide.leadingAnchor),
             longLabel.topAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 1.0),
-            longLabel.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
+            longLabel.trailingAnchor.constraint(equalTo: readableContentGuide.trailingAnchor),
             longLabel.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor)
         ])
     }

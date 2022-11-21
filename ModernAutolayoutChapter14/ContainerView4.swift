@@ -75,7 +75,7 @@ class ContainerView4: UIView {
             imageView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor),
             
             textLabel.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
-            textLabel.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
+            textLabel.trailingAnchor.constraint(equalTo: readableContentGuide.trailingAnchor)   //readableContentGuide чобы на ipad не во всю строку была надпись
         ]
     }()
     
@@ -99,7 +99,7 @@ class ContainerView4: UIView {
             imageView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor),
             
             textLabel.topAnchor.constraint(equalToSystemSpacingBelow: imageView.bottomAnchor, multiplier: 1.0),
-            textLabel.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor)
+            textLabel.leadingAnchor.constraint(equalTo: readableContentGuide.leadingAnchor) //readableContentGuide чобы на ipad не во всю строку была надпись
         ]
     }()
     

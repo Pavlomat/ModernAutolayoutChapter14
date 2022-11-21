@@ -17,6 +17,7 @@
 		BAC1949A2928C2A9008C2362 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC194992928C2A9008C2362 /* TabBarController.swift */; };
 		BAC1949C2928E57A008C2362 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1949B2928E57A008C2362 /* ThirdViewController.swift */; };
 		BAC194A02928EAE1008C2362 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC1949F2928EAE1008C2362 /* FourthViewController.swift */; };
+		BAC194A229290A06008C2362 /* ContainerView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC194A129290A06008C2362 /* ContainerView4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BAC194992928C2A9008C2362 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BAC1949B2928E57A008C2362 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		BAC1949F2928EAE1008C2362 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		BAC194A129290A06008C2362 /* ContainerView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +71,10 @@
 				BAC194992928C2A9008C2362 /* TabBarController.swift */,
 				BAC051DD2922A9860052BB95 /* FirstViewController.swift */,
 				BA8505C72927C985007E984E /* SecondViewController.swift */,
+				BA8505C92927CCFE007E984E /* ContainerView2.swift */,
 				BAC1949B2928E57A008C2362 /* ThirdViewController.swift */,
 				BAC1949F2928EAE1008C2362 /* FourthViewController.swift */,
-				BA8505C92927CCFE007E984E /* ContainerView2.swift */,
+				BAC194A129290A06008C2362 /* ContainerView4.swift */,
 				BAC051D2292274390052BB95 /* Assets.xcassets */,
 				BAC051D4292274390052BB95 /* LaunchScreen.storyboard */,
 				BAC051D7292274390052BB95 /* Info.plist */,
@@ -157,6 +160,7 @@
 				BAC1949A2928C2A9008C2362 /* TabBarController.swift in Sources */,
 				BA8505CA2927CCFE007E984E /* ContainerView2.swift in Sources */,
 				BAC051CC292274380052BB95 /* SceneDelegate.swift in Sources */,
+				BAC194A229290A06008C2362 /* ContainerView4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,31 +11,19 @@ class FourthViewController: UIViewController {
     
     private let padding: CGFloat = 20.0
     
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Weather For Today"
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
-        label.adjustsFontForContentSizeCategory = true
-        label.numberOfLines = 0
-        label.textColor = .black
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private let containerView: ContainerView4 = {
+        let view = ContainerView4()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+        return view
     }()
     
-    private let textLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Today will be hot and sunny. If you are going out you will need a hat and sunglasses. There is a small chance of heavy thunderstorm in the afternoon that could cause severe floodng so you mmay also want to take a boat"
-        label.font = UIFont.preferredFont(forTextStyle: .body)
-        label.adjustsFontForContentSizeCategory = true
-        label.numberOfLines = 0
-        label.textColor = .black
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.addSubview(containerView)
+        return scrollView
     }()
-    
-    let imageView = createImageView(name: "pngegg")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,27 +32,24 @@ class FourthViewController: UIViewController {
     }
     
     private func setupView() {
-        view.addSubview(titleLabel)
-        view.addSubview(textLabel)
-        view.addSubview(imageView)
+        view.addSubview(scrollView)
         
         view.directionalLayoutMargins = NSDirectionalEdgeInsets(top: padding, leading: padding, bottom: padding, trailing: padding)
         
-        let margins = view.layoutMarginsGuide
+        view.addSubview(scrollView)
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: margins.topAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            imageView.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 1.0),
-            imageView.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            scrollView.topAnchor.constraint(equalTo: containerView.topAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
             
-            textLabel.topAnchor.constraint(equalToSystemSpacingBelow: imageView.bottomAnchor, multiplier: 1.0),
-            textLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor),
-            textLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor),
-            textLabel.bottomAnchor.constraint(equalTo: margins.bottomAnchor)
+            scrollView.widthAnchor.constraint(equalTo: containerView.widthAnchor)
         ])
     }
 }
